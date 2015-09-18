@@ -1,8 +1,8 @@
 # Lab Assignment 2
 
-Assigned: September 18, 2014
+Assigned: September 18, 2015
 
-Due: September 25, 2014 11:59:59 pm
+Due: September 25, 2015 11:59:59 pm EDT
 
 # Description
 In this assignment, you are required to implement a postfix (also called Reverse Polish Notation) calculator called dcc. There is a classic calculator on UNIX systems called dc that can use the same syntax as your calculator and that you can use to check your results. I have provided some source code that you can use as the basis of your program. It has several critical parts that have been stripped out. Use the comments in the example to figure out what to write. Implementing your calculator will require implementing a stack. Your program only has to handle double-precision floating point (C type double) numbers.
@@ -43,7 +43,7 @@ You are also provided several input files, and a compiled executable called dcc_
 -42.000000
 ```
 
-In the above, the cat command prints out the contents of the dcc-input-01.txt file. When that file is used as an input, to the dcc.example command, it outputs -42. That is becuase the input file contains the command to compute (4 + 3) * (2 - 8) and print the result.
+In the above, the cat command prints out the contents of the dcc-input-01.txt file. When that file is used as an input, to the dcc.example command, it outputs -42. That is becuase the input file contains the command to compute (4 + 3) * (2 - 8) and print the result. You should try the same with the other example input files.
 
 # Compilation
 You are also provided with a Makefile that lets you build your program more easily. You can invoke it by running make from the command-line.

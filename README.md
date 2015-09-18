@@ -43,7 +43,7 @@ You are also provided several input files, and a compiled executable called dcc_
 -42.000000
 ```
 
-In the above, the dcc-input-01.txt file contains the command to compute (4 + 3) * (2 - 8) and print the result.
+In the above, the cat command prints out the contents of the dcc-input-01.txt file. When that file is used as an input, to the dcc.example command, it outputs -42. That is becuase the input file contains the command to compute (4 + 3) * (2 - 8) and print the result.
 
 # Compilation
 You are also provided with a Makefile that lets you build your program more easily. You can invoke it by running make from the command-line.

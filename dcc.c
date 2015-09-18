@@ -69,25 +69,21 @@ int pop(struct dc_stack *s, double *t)
  */ 
 int parse_op(const char *tok, char *op)
 {
-	if (tok == NULL) {
+	int rc = -1;
+
+	if (tok == NULL)
 		return -1;
-	}
 
-	if (tok[0] == '\0') {
-		/* Zero-length string is invalid. */
+	/* Make sure the token length is exactly 1. */
+	if (strlen(tok) != 1)
 		return -1;
-	}
 
-	if (tok[1] == '\0') {
-		/* If the token length is exactly 1. */
-
-		/* Fill in the rest of the code below. 
-		 * Better still, use a switch statement.
-		 */
-		if (tok[0] == 'p' || tok[0] == '+') {
-			*op = tok[0];
-			return 0;
-		}
+	/* Fill in the rest of the code below. 
+	 * Better still, use a switch statement.
+	 */
+	if (tok[0] == 'p' || tok[0] == '+') {
+		*op = tok[0];
+		return 0;
 	}
 
 	return -1;
@@ -206,6 +202,11 @@ int main(int argc, char *argv[])
 	}
 	else {
 		fp = fopen(argv[1], "rb");
+
+		if (!fp) {
+			perror("fopen");
+			return 1;
+		}
 	}
 
 	rc = dcc(fp);

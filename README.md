@@ -36,6 +36,16 @@ c : Clear the stack, rendering it empty.
 You are also provided several input files, and a compiled executable called dcc_example that uses doubles as data types. You can run the input files against dc or dcc to see what the correct output from your program should be.
 
 ```
+>cat dcc-input-00.txt    
+3 4 + p
+
+>./dcc.example dcc-input-00.txt
+7.000000
+```
+
+In the above, the cat command prints out the contents of the dcc-input-00.txt file. When that file is used as an input, to the dcc.example command, it prints 7. That is because the input file contains a command to compute 3 + 4 and print the result.
+
+```
 >cat dcc-input-01.txt        
 4 3 + 2 8 - * p
 
@@ -43,7 +53,7 @@ You are also provided several input files, and a compiled executable called dcc_
 -42.000000
 ```
 
-In the above, the cat command prints out the contents of the dcc-input-01.txt file. When that file is used as an input, to the dcc.example command, it outputs -42. That is becuase the input file contains the command to compute (4 + 3) * (2 - 8) and print the result. You should try the same with the other example input files.
+Using the dcc-input-01.txt file, the output is -42. That is becuase the input file contains the command to compute (4 + 3) * (2 - 8) and print the result. You should try the same with the other example input files.
 
 # Compilation
 You are also provided with a Makefile that lets you build your program more easily. You can invoke it by running make from the command-line.

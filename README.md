@@ -14,7 +14,8 @@ You must implement the following single-character commands:
 
 ```
 p : Print the value of the top element (but leave it the top of the stack).
-f : Print the value of every element on the stack, one per line, but leave them all in the stack.
+f : Print the value of every element on the stack, one per line,
+    but leave them all in the stack.
 c : Clear the stack, rendering it empty.
 + : Pop two values off the stack,
     add them, and push the result.

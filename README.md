@@ -34,7 +34,7 @@ c : Clear the stack, rendering it empty.
 ```
 
 # Example Output
-You are also provided several input files, and a compiled executable called dcc_example that uses doubles as data types. You can run the input files against dc or dcc to see what the correct output from your program should be.
+You are also provided several input files, and a compiled executable called dcc.example that uses doubles as data types. You can run the input files against dc or dcc to see what the correct output from your program should be.
 
 ```
 >cat dcc-input-00.txt    
